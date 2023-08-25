@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#1D2330;
+    /* height: 100vh; */
+    
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+
+.main{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* word-spacing: 10px; */
+    /* line-height: 40px; */
+    /* white-space: nowrap; */
+}
+
+
+.button{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.button > a > button{
+    background: #1D2330;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.start{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(9, 9, 219);
+}
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col1{
+    width: 350px;
+    max-width: 100%;
+    height: 200px;
+    background-color:#24314d;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.col1 > .col1_1 {
+    text-align: center;
+    padding: 50px;
+    cursor: pointer;
+}
+
+.bx  {
+   
+    font-size: 50px;
+    color: white;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+
+.footer2{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.footer2 > button{
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.849);
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    color: white;
+}
+
+/*  media for tablet */
+
+@media only screen and (min-width:500px) and (max-width:1200px) {
+    section{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .row1{
+        width: 96%;
+        margin: auto 20% auto;
+        flex-direction: column;
+    }
+
+    .main p > p {
+        width: 21px;
+        height: auto;
+        /* flex-direction: column; */
+    }
+}
+
+
+/* media for phone */
+
+@media only screen and (min-width:200px) and (max-width:567px) {
+    section{
+        width: 100%;
+    }
+
+    .row1{
+        width: 96%;
+        margin: 2%;
+        flex-direction: column;
+    }
+
+    .main p > p {
+        width: 21px;
+        /* height: auto; */
+        /* flex-direction: column; */
+    }
+}
+
